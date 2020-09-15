@@ -98,7 +98,7 @@ namespace ConsoleApp1
             //    first = second;
             //    second = next;
             //}
-
+            // Test
             int num = Convert.ToInt32(Console.ReadLine());
 
             for (int i = 1; i <= 10; ++i)
