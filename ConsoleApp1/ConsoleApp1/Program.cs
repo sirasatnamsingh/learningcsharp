@@ -59,6 +59,25 @@ namespace ConsoleApp1
             //    }
             //}
 
+            // Find Odd Number 
+
+            //Console.WriteLine("Please enter any number to find the odd numbers ");
+            //int num = Convert.ToInt32(Console.ReadLine());
+            //// int Ans = 0;
+
+            //for (int i = 1; i <= num; i++)
+            //{
+
+            //    if (i % 2 != 0)
+            //    {
+            //        Console.WriteLine(i);
+            //        //Ans = Ans + 1;
+            //    }
+
+            //}
+
+
+
             //Console.WriteLine("Total even numbers are " +total);
 
             // Formula to find fibonacci series //
@@ -99,15 +118,84 @@ namespace ConsoleApp1
             //    second = next;
             //}
             // Test
-            int num = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 1; i <= 10; ++i)
+            // Multiplication - Tables 
 
+            //int num = Convert.ToInt32(Console.ReadLine());
+
+            //for (int i = 1; i <= 10; ++i)
+            //{
+            //    int mul = num * i;
+            //    Console.WriteLine(num + " X " + i + " = " + mul);
+            //}
+
+            // Find Percentage 
+
+            //Console.WriteLine("Please enter the value");
+            //int value = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("Please enter the Percentage");
+            //double per = Convert.ToDouble(Console.ReadLine());
+
+            //double ans = value * per / 100F;
+            //Console.WriteLine( per+ "%" + " Percentage of " + value + " is "+ ans + "." );
+
+
+            // FInd Compound Insterest (Monthly Basis)
+
+            //Console.WriteLine("Please the amount to invest per month: ");
+            //double amount = Convert.ToDouble(Console.ReadLine());
+
+            //Console.WriteLine("Please enter the expected rate of on investment : ");
+            //double rate = Convert.ToDouble(Console.ReadLine());
+
+            //Console.WriteLine("Please enter number of months for investment : ");
+            //double b = Convert.ToDouble(Console.ReadLine());
+
+            //double maturity = 0;
+
+
+            //for (int i = 1; i <= b; i++)
+
+            //{
+            //    double rateofinterest = rate / b * 100;
+            //    double interest = ((maturity + amount) * rate) / 100;
+            //    maturity = maturity + amount + interest;
+            //}
+
+            //Console.WriteLine("Invested amount is " + (amount * b));
+            //Console.WriteLine("Maturity amount is " + (maturity));
+
+            Console.WriteLine("Please enter the 1st number: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Please enter the 2nd number: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Please enter the 3rd number: ");
+            int c = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Please enter the 4th number: ");
+            int d = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Please enter the 5th number: ");
+            int e = Convert.ToInt32(Console.ReadLine());
+
+            List<int> data = new List<int>();
+            data.Add(a);
+            data.Add(b);
+            data.Add(c);
+            data.Add(d);
+            data.Add(e);
+
+            int i = a;
+            for (int index = 1; index < data.Count(); index++)
             {
-                int mul = num * i;
-                Console.WriteLine(num + " X " + i + " = " + mul);
-
+                if (i > data[index])
+                { i = data[index]; }
             }
+
+            Console.WriteLine("The samllest value is " + i +  ".");
             Console.ReadLine();
         }
     }
